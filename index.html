@@ -3,42 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/reset.css">
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    <!-- navigation bar -->
-    <nav>
-        <h1>Andre's Portfolio</h1>
-        <!-- main navigation links -->
-        <ul class="nav-links">
-            <li><a href="#aboutme" target="_blank">ABOUT ME</a></li>
-            <li><a href="#projects" target="_blank">PROJECTS</a></li>
-            <li><a href="#contactme" target="_blank">CONTACT ME</a></li>
-        <!-- social media links -->
-        <ul class="social-media">
-            <!-- <li><a href="https://twitter.com"><img src="./assets/[TWITTER ICON]></a></li> -->
-            <!-- <li><a href="https://github.com"><img src="./assets/[GH ICON]></a></li> -->
-        </ul>
-    </nav>
-    <!-- hero image -->
-    <figure>
-        <!-- <img src="" alt=""> -->
-    </figure>
-    <!-- main content (use flexbox)-->
-    <main>
-        <!-- image and link to project 1 -->
-        <!-- image and link to project 2 -->
-        <!-- image and link to project 3 -->
-        
-    </main>
-    <!-- contact section -->
-    <contact>
-        <!-- input fields -->
-    </contact>
-    <footer>
-        <!-- signature -->
-    </footer>
-    
+    <!-- the biggest box -->
+    <div id="border">
+        <!-- header -->
+        <header>
+            <div class="name">
+                <h1>Andre Endique</h1>
+                <h2>Developer</h2>
+            </div>
+            <nav class="social-nav">
+                <a href="#">Icon</a>
+                <a href="#">Icon</a>
+            </nav>
+        </header>
+        <!-- where the primary content will go -->
+        <section>
+            <!-- the about, project, and contact content will show here  -->
+            <div id="about" class="page-content">
+                <figure>Image</figure>
+                <div class="content-text">
+                    <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora natus asperiores quos.</article>
+                    <h2 class="title">Title</h2>
+                </div>
+            </div>
+            <!-- <div id="project" class="page-content">
+                <figure>Image</figure>
+                <div class="content-text">
+                    <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora natus asperiores quos.</article>
+                    <h2 class="title">Title</h2>
+                </div>
+            </div>
+            <div id="contact" class="page-content">
+                <figure>Image</figure>
+                <div class="content-text">
+                    <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora natus asperiores quos.</article>
+                    <h2 class="title">Title</h2>
+                </div>
+            </div> -->
+            <!-- page navigation links here -->
+            <nav class="page-nav">
+                <ul>
+                    <div></div>
+                    <li><h2 id="about-link">About</h2></li>
+                    <li><h2 id="project-link">Projects</h2></li>
+                    <li><h2 id="contact-link">Contact</h2></li>
+                </ul>
+            </nav>
+        </section>
+    </div>
+    <!-- footer section -->
+    <footer>Footer</footer>
+    <scipt src="script.js"></scipt>
 </body>
 </html>
