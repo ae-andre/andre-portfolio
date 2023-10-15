@@ -1,79 +1,287 @@
 * {
-    outline: 1px solid white;
-    background-color: darkgrey;
+    line-height: 1.3;
 }
 
 body {
     height: 100vh;
-    padding: 20px;
+    background-color: #FEFAE0;
 }
 
-#border {
-    min-height: 80vh;
-    padding: 20px;
-}
+/* header section */
 
 header {
-    min-height: 100px;
+    min-height: 75px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 15px 20px 0px 20px;
+    background-color: #606C38;
+    color: #FEFAE0;
 }
+
+@media (max-width:800px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.name h1 {
+    font-family: helvetica;
+    font-weight: lighter;
+    font-size: 150%;
+}
+
+.name h2 {
+    font-family: helvetica;
+    font-weight: lighter;
+}
+
+@media (max-width:800px) {
+    .name {
+        margin-bottom: 15px;
+    }
+}
+
+/* nav section */
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width:800px) {
+    nav ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+nav li {
+    padding: 20px;
+}
+
+@media (max-width:800px) {
+    nav li {
+        padding: 10px;
+    }
+}
+
+nav a {
+    color: #FEFAE0;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.35s;
+    transition: filter 0.15s;
+}
+
+nav a:hover {
+    color: #DDA15E;
+    filter: drop-shadow(.5px .5px 2px black)
+}
+
+/* section formatting */
 
 section {
     display: flex;
-    flex-direction: row;
-    height: 65vh;
-
+    width: auto;
+    height: 300px;
 }
 
-.page-content {
+/* about section */
+
+.about {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 80%;
+    background-color: #DDA15E;
+    margin: 10px auto 10px auto;
+    box-shadow: 2px 2px 10px black;
+    width: 85%;
+    height: 450px;
+    padding: 10px;
 }
 
-figure {
+@media (max-width:800px) {
+    .about {
+        height: auto;
+        width: 100%;
+        margin: 10px auto 10px auto;
+    }
+}
+
+/* about section content formatting */
+
+.about h2 {
     display: flex;
-    padding: 20px;
-    height: 60%;
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-size: 300%;
+    margin-bottom: 10px;
 }
 
-.content-text {
+@media (max-width:800px) {
+    .about h2 {
+        font-size: 200%
+    }
+}
+
+.about-content {
+    display: flex;
+    margin: auto;
+    padding: 30px;
+}
+
+.about-content article {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.about-text {
+    margin-right: 20px;
+    padding-right: 60px;
+}
+
+@media (max-width:800px) {
+    .about-text {
+        padding-right: 20px;
+    }
+}
+
+.about-image img {
+    display: flex;
+    box-shadow: 2px 2px 10px black;
+    width: 200px; 
+}
+
+/* Project section */
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    background-color: #606C38;
+    margin: 20px auto 10px auto;
+    width: 100%;
+    height: 500px;
+}
+
+@media (max-width:800px) {
+    .projects {
+        height: auto;
+    }
+}
+
+.projects h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 300%;
+    margin: 30px;
+}
+
+.project-content {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 0px 20px 20px 20px;
+    margin: 0 30px 30px 30px;
+}
+
+@media (max-width:800px) {
+    .project-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* project section media */
+
+
+
+.project-content img {
+    display: flex;
+    margin: 20px;
+    width: 250px;
+    box-shadow: 2px 2px 10px black; 
+    filter: sepia(90%);
+    transition: filter 0.35s;
+    transition: width 0.35s;  
+}
+
+.first-project img {
+    width: 300px;
+}
+
+.project-content img:hover {
+    filter: sepia(0%);
+    width: 300px;
+}
+
+.project-content h3 {
+    display: flex;
+    justify-content: center;    
+}
+
+/* contact section formatting */
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #BC6C25;
+    width: 100%;
+}
+
+@media (max-width:800px) {
+    .contact {
+        width: 100%;
+    }
+}
+
+.contact h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 300%;
+    margin: 30px;
+}
+
+@media (max-width:800px) {
+    .contact h2 {
+        font-size: 150%
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 10px;
-    height: 40%
+    width: 400px;
 }
 
-.title {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+
+form input[type=message]{
+    padding: 100px;
 }
 
-.page-nav {
-    display: flex;
-    align-items: flex-end;
-    justify-content: right;
-    width: 20%;
-}
 
-.page-nav li {
-    display: flex;
-    padding: 10px;
-    justify-content: right;
+/* footer section formatting */
 
-}
 
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100px;
+    margin-top: 8px;
+    min-height: 60px;
+    background-color: #283618;
+}
 
+.footer-text {
+    margin-left: 20px;
+    font-size: small;
+    color: rgb(141, 141, 141);
 }
