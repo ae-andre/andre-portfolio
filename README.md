@@ -4,6 +4,14 @@
 
 A portfolio site to highlight deployed projects and coding proficiencies.
 
+In building the site, I wanted to highlight some key elements:
+
+- Accessibility: Included alt text for all images.
+- Responsiveness: Added code to ensure the site would display properly on all device types.
+- Scalability: Designed the site to allow for future projects to be easily added as the portfolio grows.
+
+I used warm colors to give the site a friendly, approachable feel. I added a recent photo of me that had a warm tone to it as well.
+
 ## Page Link
 
 https://ae-andre.github.io/andre-portfolio/
